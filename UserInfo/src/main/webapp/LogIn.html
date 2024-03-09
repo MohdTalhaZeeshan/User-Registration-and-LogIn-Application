@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+        *   
+        {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 25%;
+            height: 70%;
+            background-color: aqua;
+            border: 2px white solid;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+         input{
+            width: 20vw;
+            height: 3vw;
+            border: none;
+            outline: none;
+            font-size: 1vw;
+            text-align: center;
+            border-radius: 10px;
+            letter-spacing: 6px;
+         }
+       
+       #button{
+        width: 10vw;
+        background-color: forestgreen;
+       }
+       #button:hover{
+        background-color: cornflowerblue;
+        cursor: pointer;
+       }
+     
+    </style>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+   
+  <form action="LogIn">
+    <h1>LogIn</h1>
+   
+     <input placeholder="Enter Email Id" type="email" name="emailId">
+     
+     
+     <input placeholder="Enter Password" type="password" name="password">
+   
+  
+     <input  id="button" type="submit" value="LogIn">
+  
+    <div><a href="UserRegistration.html">New Account?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="UpdatePassword.html">Forgot Password?</a> </div>
+  </form>
+
+
+</body>
+</html>

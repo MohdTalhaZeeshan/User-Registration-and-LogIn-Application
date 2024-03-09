@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+*{
+
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(75deg,black,#42275a);
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}
+
+.wrapper{
+	width: 420px;
+}

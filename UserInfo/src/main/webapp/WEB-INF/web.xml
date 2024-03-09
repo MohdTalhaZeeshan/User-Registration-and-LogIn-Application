@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>UserInfo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>registration</servlet-name>       <!-- To Configure  to class using url-pattern   -->
+  <servlet-class>com.jsp.user.UserRegistration</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>registration</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>userLogIn</servlet-name>
+  <servlet-class>com.jsp.user.LogIn</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>userLogIn</servlet-name>
+  <url-pattern>/LogIn</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>changePassword</servlet-name>
+  <servlet-class>com.jsp.user.UpdatePassword</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>changePassword</servlet-name>
+  <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+</web-app>
